@@ -1,0 +1,39 @@
+2026-02-13 13:04:22,701 - INFO - Loading MuJoCo model from: /Users/victoroldensand/Documents/Mecha-Labs/FR8/delta-policy/simulation/delta-robot/scene.xml
+2026-02-13 13:04:22,811 - INFO - Parsing MJCF file...
+2026-02-13 13:04:22,876 - INFO - Model loaded successfully!
+2026-02-13 13:04:22,876 - INFO -   - Bodies: 23
+2026-02-13 13:04:22,876 - INFO -   - Joints: 21
+2026-02-13 13:04:22,876 - INFO -   - Geoms: 157
+2026-02-13 13:04:22,876 - INFO -   - Actuators: 6
+2026-02-13 13:04:22,876 - INFO -   - DOF: 93
+2026-02-13 13:04:22,876 - INFO - Simulation data initialized
+2026-02-13 13:04:22,876 - INFO - Running test simulation step...
+2026-02-13 13:04:22,878 - INFO - Test step completed successfully
+2026-02-13 13:04:22,935 - INFO - Launching interactive viewer...
+2026-02-13 13:04:22,935 - INFO - Controls: Space=pause, Backspace=reset, Tab=UI, Ctrl+L=reload
+2026-02-13 13:14:15,173 - INFO - Loading MuJoCo model from: /Users/victoroldensand/Documents/Mecha-Labs/FR8/delta-policy/simulation/delta-robot/scene.xml
+2026-02-13 13:14:15,279 - INFO - Parsing MJCF file...
+2026-02-13 13:14:15,365 - INFO - Model loaded successfully!
+2026-02-13 13:14:15,366 - INFO -   - Bodies: 23
+2026-02-13 13:14:15,366 - INFO -   - Joints: 21
+2026-02-13 13:14:15,366 - INFO -   - Geoms: 157
+2026-02-13 13:14:15,366 - INFO -   - Actuators: 6
+2026-02-13 13:14:15,366 - INFO -   - DOF: 93
+2026-02-13 13:14:15,366 - INFO - Simulation data initialized
+2026-02-13 13:14:15,366 - INFO - Running test simulation step...
+2026-02-13 13:14:15,368 - INFO - Test step completed successfully
+2026-02-13 13:14:15,423 - INFO - Launching interactive viewer...
+2026-02-13 13:14:15,423 - INFO - Controls: Space=pause, Backspace=reset, Tab=UI, Ctrl+L=reload
+2026-02-13 13:37:01,725 - INFO - Loading MuJoCo model from: /Users/victoroldensand/Documents/Mecha-Labs/FR8/delta-policy/simulation/delta-robot/scene.xml
+2026-02-13 13:37:01,838 - INFO - Parsing MJCF file...
+2026-02-13 13:37:01,911 - INFO - Model loaded successfully!
+2026-02-13 13:37:01,912 - INFO -   - Bodies: 13
+2026-02-13 13:37:01,912 - INFO -   - Joints: 9
+2026-02-13 13:37:01,912 - INFO -   - Geoms: 101
+2026-02-13 13:37:01,912 - INFO -   - Actuators: 5
+2026-02-13 13:37:01,912 - INFO -   - DOF: 17
+2026-02-13 13:37:01,912 - INFO - Simulation data initialized
+2026-02-13 13:37:01,912 - INFO - Running test simulation step...
+2026-02-13 13:37:01,913 - INFO - Test step completed successfully
+2026-02-13 13:37:01,981 - INFO - Launching interactive viewer...
+2026-02-13 13:37:01,981 - INFO - Controls: Space=pause, Backspace=reset, Tab=UI, Ctrl+L=reload

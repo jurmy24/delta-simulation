@@ -1,0 +1,3 @@
+2026-02-13 13:03:12,677 - INFO - Loading MuJoCo model from: /Users/victoroldensand/Documents/Mecha-Labs/FR8/delta-policy/simulation/delta-robot/scene.xml
+2026-02-13 13:03:12,677 - ERROR - Failed to import mujoco: No module named 'mujoco'
+2026-02-13 13:03:12,678 - ERROR - Install with: pip install mujoco

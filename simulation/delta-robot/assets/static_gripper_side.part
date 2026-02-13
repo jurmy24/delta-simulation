@@ -2,12 +2,12 @@
     "configuration": "default",
     "documentId": "20bfbde5f0dfed09746f3835",
     "documentMicroversion": "41efed7b1025af894d791c77",
-    "elementId": "664e74b3e04291576021d4a2",
+    "elementId": "75f02b427703acc45c30f57a",
     "fullConfiguration": "default",
-    "id": "Mi7NCwLsNUHZ4M2kP",
+    "id": "Mi9/326sk8OOA9gB3",
     "isStandardContent": false,
-    "name": "Base plate <1>",
-    "partId": "JHD",
+    "name": "Static gripper side <1>",
+    "partId": "KFfH",
     "suppressed": false,
     "type": "Part"
 }
