@@ -1,0 +1,65 @@
+<mujoco model="four_bar_square">
+    <compiler angle="radian"/>
+
+    <default>
+        <joint type="hinge" axis="0 1 0" damping="0.05"/>
+        <geom type="capsule" size="0.01" density="1000"/>
+        <!-- Default color is yellow -->
+        <site size="0.015" rgba="1 1 0 1"/>
+    </default>
+
+    <worldbody>
+        <!-- Ground link (bottom of the square, fixed to world) -->
+        <!-- Color is gray -->
+        <geom name="ground_link" type="capsule" size="0.012"
+              fromto="-0.1 0 0.5  0.1 0 0.5" rgba="0.5 0.5 0.5 1"/>
+        <site name="ground_left" pos="-0.1 0 0.5"/>
+        <site name="ground_right" pos="0.1 0 0.5"/>
+
+        <!-- Link 1: Left crank (left side of the square) -->
+        <body name="left_crank" pos="-0.1 0 0.5">
+
+            <!-- Color is red -->
+            <joint name="j_left"/>
+            <geom name="left_link" fromto="0 0 0  0 0 0.2" rgba="0.8 0.2 0.2 1"/>
+            <site name="left_top" pos="0 0 0.2"/>
+
+            <!-- Link 2: Coupler (top of the square) -->
+            <!-- Color is green -->
+            <body name="coupler" pos="0 0 0.2">
+                <joint name="j_coupler"/>
+                <geom name="top_link" fromto="0 0 0  0.2 0 0" rgba="0.2 0.8 0.2 1"/>
+                <site name="coupler_end" pos="0.2 0 0"/>
+            </body>
+        </body>
+
+        <!-- Link 3: Right crank (right side of the square) -->
+        <body name="right_crank" pos="0.1 0 0.5">
+            <!-- Color is blue -->
+            <joint name="j_right"/>
+            <geom name="right_link" fromto="0 0 0  0 0 0.2" rgba="0.2 0.2 0.8 1"/>
+            <site name="right_top" pos="0 0 0.2"/>
+        </body>
+    </worldbody>
+
+    <!-- Spatial tendon connecting the free ends to close the loop -->
+    <!-- color is orange -->
+    <!-- This will have length 0 by default -->
+    <tendon>
+        <spatial name="close_loop" width="0.003" rgba="1 0.5 0 0.8">
+            <site site="coupler_end"/>
+            <site site="right_top"/>
+        </spatial>
+    </tendon>
+
+    <!-- Equality constraint: force tendon length to zero, closing the kinematic chain -->
+    <equality>
+        <!-- By default, the tendon will be closed when the mechanism is initialized -->
+        <tendon tendon1="close_loop"/>
+    </equality>
+
+    <!-- Single actuator to drive the mechanism -->
+    <actuator>
+        <motor name="drive" joint="j_left" gear="1" ctrlrange="-1 1" ctrllimited="true"/>
+    </actuator>
+</mujoco>

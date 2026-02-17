@@ -37,3 +37,246 @@
 2026-02-13 13:37:01,913 - INFO - Test step completed successfully
 2026-02-13 13:37:01,981 - INFO - Launching interactive viewer...
 2026-02-13 13:37:01,981 - INFO - Controls: Space=pause, Backspace=reset, Tab=UI, Ctrl+L=reload
+2026-02-13 13:48:58,690 - INFO - Loading MuJoCo model from: /Users/victoroldensand/Documents/Mecha-Labs/FR8/delta-policy/simulation/delta-robot/scene.xml
+2026-02-13 13:48:58,751 - INFO - Parsing MJCF file...
+2026-02-13 13:48:58,828 - INFO - Model loaded successfully!
+2026-02-13 13:48:58,829 - INFO -   - Bodies: 19
+2026-02-13 13:48:58,829 - INFO -   - Joints: 12
+2026-02-13 13:48:58,829 - INFO -   - Geoms: 119
+2026-02-13 13:48:58,829 - INFO -   - Actuators: 5
+2026-02-13 13:48:58,829 - INFO -   - DOF: 26
+2026-02-13 13:48:58,829 - INFO - Simulation data initialized
+2026-02-13 13:48:58,829 - INFO - Running test simulation step...
+2026-02-13 13:48:58,830 - INFO - Test step completed successfully
+2026-02-13 13:48:58,892 - INFO - Launching interactive viewer...
+2026-02-13 13:48:58,892 - INFO - Controls: Space=pause, Backspace=reset, Tab=UI, Ctrl+L=reload
+2026-02-13 13:50:33,722 - INFO - Loading MuJoCo model from: /Users/victoroldensand/Documents/Mecha-Labs/FR8/delta-policy/simulation/delta-robot/scene.xml
+2026-02-13 13:50:33,798 - INFO - Parsing MJCF file...
+2026-02-13 13:50:33,860 - INFO - Model loaded successfully!
+2026-02-13 13:50:33,860 - INFO -   - Bodies: 19
+2026-02-13 13:50:33,860 - INFO -   - Joints: 12
+2026-02-13 13:50:33,860 - INFO -   - Geoms: 119
+2026-02-13 13:50:33,860 - INFO -   - Actuators: 5
+2026-02-13 13:50:33,860 - INFO -   - DOF: 26
+2026-02-13 13:50:33,861 - INFO - Simulation data initialized
+2026-02-13 13:50:33,861 - INFO - Running test simulation step...
+2026-02-13 13:50:33,861 - INFO - Test step completed successfully
+2026-02-13 13:50:33,921 - INFO - Launching interactive viewer...
+2026-02-13 13:50:33,921 - INFO - Controls: Space=pause, Backspace=reset, Tab=UI, Ctrl+L=reload
+2026-02-13 13:55:46,135 - INFO - Loading MuJoCo model from: /Users/victoroldensand/Documents/Mecha-Labs/FR8/delta-policy/simulation/delta-robot/scene.xml
+2026-02-13 13:55:46,233 - INFO - Parsing MJCF file...
+2026-02-13 13:55:46,300 - INFO - Model loaded successfully!
+2026-02-13 13:55:46,300 - INFO -   - Bodies: 19
+2026-02-13 13:55:46,300 - INFO -   - Joints: 12
+2026-02-13 13:55:46,300 - INFO -   - Geoms: 143
+2026-02-13 13:55:46,300 - INFO -   - Actuators: 5
+2026-02-13 13:55:46,300 - INFO -   - DOF: 26
+2026-02-13 13:55:46,301 - INFO - Simulation data initialized
+2026-02-13 13:55:46,301 - INFO - Running test simulation step...
+2026-02-13 13:55:46,302 - INFO - Test step completed successfully
+2026-02-13 13:55:46,364 - INFO - Launching interactive viewer...
+2026-02-13 13:55:46,364 - INFO - Controls: Space=pause, Backspace=reset, Tab=UI, Ctrl+L=reload
+2026-02-13 14:05:12,618 - INFO - Loading MuJoCo model from: /Users/victoroldensand/Documents/Mecha-Labs/FR8/delta-policy/simulation/delta-robot/scene.xml
+2026-02-13 14:05:12,696 - INFO - Parsing MJCF file...
+2026-02-13 14:05:12,761 - INFO - Model loaded successfully!
+2026-02-13 14:05:12,761 - INFO -   - Bodies: 19
+2026-02-13 14:05:12,761 - INFO -   - Joints: 12
+2026-02-13 14:05:12,761 - INFO -   - Geoms: 155
+2026-02-13 14:05:12,761 - INFO -   - Actuators: 5
+2026-02-13 14:05:12,761 - INFO -   - DOF: 26
+2026-02-13 14:05:12,761 - INFO - Simulation data initialized
+2026-02-13 14:05:12,761 - INFO - Running test simulation step...
+2026-02-13 14:05:12,763 - INFO - Test step completed successfully
+2026-02-13 14:05:12,839 - INFO - Launching interactive viewer...
+2026-02-13 14:05:12,839 - INFO - Controls: Space=pause, Backspace=reset, Tab=UI, Ctrl+L=reload
+2026-02-13 14:08:36,282 - INFO - Loading MuJoCo model from: /Users/victoroldensand/Documents/Mecha-Labs/FR8/delta-policy/simulation/delta-robot/scene.xml
+2026-02-13 14:08:36,360 - INFO - Parsing MJCF file...
+2026-02-13 14:08:36,424 - INFO - Model loaded successfully!
+2026-02-13 14:08:36,424 - INFO -   - Bodies: 19
+2026-02-13 14:08:36,424 - INFO -   - Joints: 12
+2026-02-13 14:08:36,425 - INFO -   - Geoms: 155
+2026-02-13 14:08:36,425 - INFO -   - Actuators: 5
+2026-02-13 14:08:36,425 - INFO -   - DOF: 26
+2026-02-13 14:08:36,425 - INFO - Simulation data initialized
+2026-02-13 14:08:36,425 - INFO - Running test simulation step...
+2026-02-13 14:08:36,426 - INFO - Test step completed successfully
+2026-02-13 14:08:36,492 - INFO - Launching interactive viewer...
+2026-02-13 14:08:36,492 - INFO - Controls: Space=pause, Backspace=reset, Tab=UI, Ctrl+L=reload
+2026-02-13 14:17:45,088 - INFO - Loading MuJoCo model from: /Users/victoroldensand/Documents/Mecha-Labs/FR8/delta-policy/simulation/delta-robot/scene.xml
+2026-02-13 14:17:45,142 - INFO - Parsing MJCF file...
+2026-02-13 14:17:45,203 - INFO - Model loaded successfully!
+2026-02-13 14:17:45,203 - INFO -   - Bodies: 19
+2026-02-13 14:17:45,203 - INFO -   - Joints: 12
+2026-02-13 14:17:45,203 - INFO -   - Geoms: 155
+2026-02-13 14:17:45,203 - INFO -   - Actuators: 5
+2026-02-13 14:17:45,203 - INFO -   - DOF: 26
+2026-02-13 14:17:45,203 - INFO - Simulation data initialized
+2026-02-13 14:17:45,203 - INFO - Running test simulation step...
+2026-02-13 14:17:45,204 - INFO - Test step completed successfully
+2026-02-13 14:17:45,273 - INFO - Launching interactive viewer...
+2026-02-13 14:17:45,274 - INFO - Controls: Space=pause, Backspace=reset, Tab=UI, Ctrl+L=reload
+2026-02-13 16:27:49,049 - INFO - Loading MuJoCo model from: /Users/victoroldensand/Documents/Mecha-Labs/FR8/delta-policy/simulation/delta-robot/scene.xml
+2026-02-13 16:27:49,290 - INFO - Parsing MJCF file...
+2026-02-13 16:27:49,381 - INFO - Model loaded successfully!
+2026-02-13 16:27:49,381 - INFO -   - Bodies: 19
+2026-02-13 16:27:49,381 - INFO -   - Joints: 12
+2026-02-13 16:27:49,381 - INFO -   - Geoms: 155
+2026-02-13 16:27:49,381 - INFO -   - Actuators: 5
+2026-02-13 16:27:49,381 - INFO -   - DOF: 26
+2026-02-13 16:27:49,382 - INFO - Simulation data initialized
+2026-02-13 16:27:49,382 - INFO - Running test simulation step...
+2026-02-13 16:27:49,383 - INFO - Test step completed successfully
+2026-02-13 16:27:49,490 - INFO - Launching interactive viewer...
+2026-02-13 16:27:49,490 - INFO - Controls: Space=pause, Backspace=reset, Tab=UI, Ctrl+L=reload
+2026-02-13 17:32:32,935 - INFO - Loading MuJoCo model from: /Users/victoroldensand/Documents/Mecha-Labs/FR8/delta-policy/simulation/delta-robot/scene.xml
+2026-02-13 17:32:33,081 - INFO - Parsing MJCF file...
+2026-02-13 17:32:33,161 - INFO - Model loaded successfully!
+2026-02-13 17:32:33,161 - INFO -   - Bodies: 19
+2026-02-13 17:32:33,162 - INFO -   - Joints: 12
+2026-02-13 17:32:33,162 - INFO -   - Geoms: 155
+2026-02-13 17:32:33,162 - INFO -   - Actuators: 5
+2026-02-13 17:32:33,162 - INFO -   - DOF: 26
+2026-02-13 17:32:33,162 - INFO - Simulation data initialized
+2026-02-13 17:32:33,162 - INFO - Running test simulation step...
+2026-02-13 17:32:33,163 - INFO - Test step completed successfully
+2026-02-13 17:32:33,270 - INFO - Launching interactive viewer...
+2026-02-13 17:32:33,270 - INFO - Controls: Space=pause, Backspace=reset, Tab=UI, Ctrl+L=reload
+2026-02-13 18:49:17,748 - INFO - Loading MuJoCo model from: /Users/victoroldensand/Documents/Mecha-Labs/FR8/delta-policy/simulation/delta-robot/scene.xml
+2026-02-13 18:49:17,935 - INFO - Parsing MJCF file...
+2026-02-13 18:49:18,014 - INFO - Model loaded successfully!
+2026-02-13 18:49:18,015 - INFO -   - Bodies: 20
+2026-02-13 18:49:18,015 - INFO -   - Joints: 13
+2026-02-13 18:49:18,015 - INFO -   - Geoms: 155
+2026-02-13 18:49:18,015 - INFO -   - Actuators: 6
+2026-02-13 18:49:18,015 - INFO -   - DOF: 27
+2026-02-13 18:49:18,015 - INFO - Simulation data initialized
+2026-02-13 18:49:18,015 - INFO - Running test simulation step...
+2026-02-13 18:49:18,016 - INFO - Test step completed successfully
+2026-02-13 18:49:18,091 - INFO - Launching interactive viewer...
+2026-02-13 18:49:18,091 - INFO - Controls: Space=pause, Backspace=reset, Tab=UI, Ctrl+L=reload
+2026-02-14 09:34:21,115 - INFO - Loading MuJoCo model from: /Users/victoroldensand/Documents/Mecha-Labs/FR8/delta-policy/simulation/delta-robot/scene.xml
+2026-02-14 09:34:21,330 - INFO - Parsing MJCF file...
+2026-02-14 09:34:21,410 - INFO - Model loaded successfully!
+2026-02-14 09:34:21,410 - INFO -   - Bodies: 20
+2026-02-14 09:34:21,410 - INFO -   - Joints: 13
+2026-02-14 09:34:21,410 - INFO -   - Geoms: 155
+2026-02-14 09:34:21,410 - INFO -   - Actuators: 6
+2026-02-14 09:34:21,410 - INFO -   - DOF: 27
+2026-02-14 09:34:21,411 - INFO - Simulation data initialized
+2026-02-14 09:34:21,411 - INFO - Running test simulation step...
+2026-02-14 09:34:21,411 - INFO - Test step completed successfully
+2026-02-14 09:34:21,496 - INFO - Launching interactive viewer...
+2026-02-14 09:34:21,496 - INFO - Controls: Space=pause, Backspace=reset, Tab=UI, Ctrl+L=reload
+2026-02-17 12:16:34,024 - INFO - Loading MuJoCo model from: /Users/victoroldensand/Documents/Mecha-Labs/FR8/delta-policy/simulation/simple/scene.xml
+2026-02-17 12:16:34,095 - INFO - Parsing MJCF file...
+2026-02-17 12:16:34,104 - INFO - Model loaded successfully!
+2026-02-17 12:16:34,104 - INFO -   - Bodies: 4
+2026-02-17 12:16:34,104 - INFO -   - Joints: 3
+2026-02-17 12:16:34,104 - INFO -   - Geoms: 5
+2026-02-17 12:16:34,104 - INFO -   - Actuators: 1
+2026-02-17 12:16:34,104 - INFO -   - DOF: 3
+2026-02-17 12:16:34,104 - INFO - Simulation data initialized
+2026-02-17 12:16:34,104 - INFO - Running test simulation step...
+2026-02-17 12:16:34,104 - INFO - Test step completed successfully
+2026-02-17 12:16:34,183 - INFO - Launching interactive viewer...
+2026-02-17 12:16:34,183 - INFO - Controls: Space=pause, Backspace=reset, Tab=UI, Ctrl+L=reload
+2026-02-17 12:23:15,504 - INFO - Loading MuJoCo model from: /Users/victoroldensand/Documents/Mecha-Labs/FR8/delta-policy/simulation/simple/scene.xml
+2026-02-17 12:23:15,578 - INFO - Parsing MJCF file...
+2026-02-17 12:23:15,586 - INFO - Model loaded successfully!
+2026-02-17 12:23:15,586 - INFO -   - Bodies: 4
+2026-02-17 12:23:15,586 - INFO -   - Joints: 3
+2026-02-17 12:23:15,586 - INFO -   - Geoms: 5
+2026-02-17 12:23:15,586 - INFO -   - Actuators: 1
+2026-02-17 12:23:15,586 - INFO -   - DOF: 3
+2026-02-17 12:23:15,586 - INFO - Simulation data initialized
+2026-02-17 12:23:15,586 - INFO - Running test simulation step...
+2026-02-17 12:23:15,586 - INFO - Test step completed successfully
+2026-02-17 12:23:15,633 - INFO - Launching interactive viewer...
+2026-02-17 12:23:15,633 - INFO - Controls: Space=pause, Backspace=reset, Tab=UI, Ctrl+L=reload
+2026-02-17 12:39:15,408 - INFO - Loading MuJoCo model from: /Users/victoroldensand/Documents/Mecha-Labs/FR8/delta-policy/simulation/delta-robot/scene.xml
+2026-02-17 12:39:15,470 - INFO - Parsing MJCF file...
+2026-02-17 12:39:15,525 - INFO - Model loaded successfully!
+2026-02-17 12:39:15,525 - INFO -   - Bodies: 24
+2026-02-17 12:39:15,525 - INFO -   - Joints: 22
+2026-02-17 12:39:15,525 - INFO -   - Geoms: 157
+2026-02-17 12:39:15,525 - INFO -   - Actuators: 6
+2026-02-17 12:39:15,525 - INFO -   - DOF: 99
+2026-02-17 12:39:15,525 - INFO - Simulation data initialized
+2026-02-17 12:39:15,525 - INFO - Running test simulation step...
+2026-02-17 12:39:15,528 - INFO - Test step completed successfully
+2026-02-17 12:39:15,580 - INFO - Launching interactive viewer...
+2026-02-17 12:39:15,580 - INFO - Controls: Space=pause, Backspace=reset, Tab=UI, Ctrl+L=reload
+2026-02-17 12:40:24,275 - INFO - Loading MuJoCo model from: /Users/victoroldensand/Documents/Mecha-Labs/FR8/delta-policy/simulation/delta-robot/scene.xml
+2026-02-17 12:40:24,347 - INFO - Parsing MJCF file...
+2026-02-17 12:40:24,401 - INFO - Model loaded successfully!
+2026-02-17 12:40:24,401 - INFO -   - Bodies: 24
+2026-02-17 12:40:24,401 - INFO -   - Joints: 22
+2026-02-17 12:40:24,401 - INFO -   - Geoms: 157
+2026-02-17 12:40:24,401 - INFO -   - Actuators: 6
+2026-02-17 12:40:24,401 - INFO -   - DOF: 99
+2026-02-17 12:40:24,402 - INFO - Simulation data initialized
+2026-02-17 12:40:24,402 - INFO - Running test simulation step...
+2026-02-17 12:40:24,403 - INFO - Test step completed successfully
+2026-02-17 12:40:24,456 - INFO - Launching interactive viewer...
+2026-02-17 12:40:24,456 - INFO - Controls: Space=pause, Backspace=reset, Tab=UI, Ctrl+L=reload
+2026-02-17 12:42:30,869 - INFO - Loading MuJoCo model from: /Users/victoroldensand/Documents/Mecha-Labs/FR8/delta-policy/simulation/orbita/scene.xml
+2026-02-17 12:42:30,944 - INFO - Parsing MJCF file...
+2026-02-17 12:42:30,945 - ERROR - Error loading model: ValueError: XML Error: plugin mujoco.sdf.sdflib not found
+Element 'plugin', line 0
+
+2026-02-17 12:43:18,238 - INFO - Loading MuJoCo model from: /Users/victoroldensand/Documents/Mecha-Labs/FR8/delta-policy/simulation/simple/scene.xml
+2026-02-17 12:43:18,299 - INFO - Parsing MJCF file...
+2026-02-17 12:43:18,307 - INFO - Model loaded successfully!
+2026-02-17 12:43:18,307 - INFO -   - Bodies: 4
+2026-02-17 12:43:18,308 - INFO -   - Joints: 3
+2026-02-17 12:43:18,308 - INFO -   - Geoms: 5
+2026-02-17 12:43:18,308 - INFO -   - Actuators: 1
+2026-02-17 12:43:18,308 - INFO -   - DOF: 3
+2026-02-17 12:43:18,308 - INFO - Simulation data initialized
+2026-02-17 12:43:18,308 - INFO - Running test simulation step...
+2026-02-17 12:43:18,308 - INFO - Test step completed successfully
+2026-02-17 12:43:18,355 - INFO - Launching interactive viewer...
+2026-02-17 12:43:18,355 - INFO - Controls: Space=pause, Backspace=reset, Tab=UI, Ctrl+L=reload
+2026-02-17 12:44:30,262 - INFO - Loading MuJoCo model from: /Users/victoroldensand/Documents/Mecha-Labs/FR8/delta-policy/simulation/simple/scene.xml
+2026-02-17 12:44:30,335 - INFO - Parsing MJCF file...
+2026-02-17 12:44:30,335 - INFO - Simulation data initialized
+2026-02-17 12:44:30,335 - INFO - Running test simulation step...
+2026-02-17 12:44:30,336 - INFO - Test step completed successfully
+2026-02-17 12:44:30,381 - INFO - Launching interactive viewer...
+2026-02-17 12:44:30,381 - INFO - Controls: Space=pause, Backspace=reset, Tab=UI, Ctrl+L=reload
+2026-02-17 12:44:42,009 - INFO - Loading MuJoCo model from: /Users/victoroldensand/Documents/Mecha-Labs/FR8/delta-policy/simulation/simple/scene.xml
+2026-02-17 12:44:42,067 - INFO - Parsing MJCF file...
+2026-02-17 12:44:42,075 - INFO - Model loaded successfully!
+2026-02-17 12:44:42,075 - INFO -   - Bodies: 4
+2026-02-17 12:44:42,075 - INFO -   - Joints: 3
+2026-02-17 12:44:42,075 - INFO -   - Geoms: 5
+2026-02-17 12:44:42,075 - INFO -   - Actuators: 1
+2026-02-17 12:44:42,075 - INFO -   - DOF: 3
+2026-02-17 12:44:42,076 - INFO - Simulation data initialized
+2026-02-17 12:44:42,076 - INFO - Running test simulation step...
+2026-02-17 12:44:42,076 - INFO - Test step completed successfully
+2026-02-17 12:44:42,119 - INFO - Launching interactive viewer...
+2026-02-17 12:44:42,119 - INFO - Controls: Space=pause, Backspace=reset, Tab=UI, Ctrl+L=reload
+2026-02-17 12:49:38,686 - INFO - Loading MuJoCo model from: /Users/victoroldensand/Documents/Mecha-Labs/FR8/delta-policy/simulation/orbita/scene.xml
+2026-02-17 12:49:38,797 - INFO - Parsing MJCF file...
+2026-02-17 12:49:38,802 - ERROR - Error loading model: ValueError: XML Error: plugin mujoco.sdf.sdflib not found
+Element 'plugin', line 0
+
+2026-02-17 12:50:55,752 - INFO - Loading MuJoCo model from: /Users/victoroldensand/Documents/Mecha-Labs/FR8/delta-policy/simulation/orbita/scene.xml
+2026-02-17 12:50:55,811 - INFO - Loaded plugin: libsdf_plugin.dylib
+2026-02-17 12:50:55,811 - INFO - Loaded plugin: libactuator.dylib
+2026-02-17 12:50:55,811 - INFO - Loaded plugin: libsensor.dylib
+2026-02-17 12:50:55,811 - INFO - Loaded plugin: libelasticity.dylib
+2026-02-17 12:50:55,811 - INFO - Parsing MJCF file...
+2026-02-17 12:50:55,812 - ERROR - Error loading model: ValueError: XML Error: plugin mujoco.sdf.sdflib not found
+Element 'plugin', line 0
+
+2026-02-17 12:51:17,270 - INFO - Loading MuJoCo model from: /Users/victoroldensand/Documents/Mecha-Labs/FR8/delta-policy/simulation/orbita/scene.xml
+2026-02-17 12:51:17,333 - INFO - Loaded plugin: libsdf_plugin.dylib
+2026-02-17 12:51:17,333 - INFO - Loaded plugin: libactuator.dylib
+2026-02-17 12:51:17,333 - INFO - Loaded plugin: libsensor.dylib
+2026-02-17 12:51:17,333 - INFO - Loaded plugin: libelasticity.dylib
+2026-02-17 12:51:17,333 - INFO - Parsing MJCF file...
+2026-02-17 12:51:17,333 - ERROR - Error loading model: ValueError: XML Error: plugin mujoco.sdf.sdflib not found
+Element 'plugin', line 0
+
