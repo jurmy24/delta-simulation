@@ -1,11 +1,9 @@
 {
-  // Onshape URL of the assembly
   "url": "https://cad.onshape.com/documents/20bfbde5f0dfed09746f3835/w/89e87a07589996b404d06798/e/02e6df3ca634eef0ea4fbf46",
-
-  // Output format
   "output_format": "mujoco",
 
-  // Tighten loop-closure equalities for all closing_ constraints
+  "additional_xml": "mujoco_options.xml",
+
   "equalities": {
     "closing_*": {
       "solref": "0.005 1",
@@ -13,9 +11,24 @@
     }
   },
 
-  // Ensure ball joints and forearms are treated as passive (no actuators)
   "joint_properties": {
+    "*": {
+      "kp": 1000,
+      "dampratio": 1
+    },
+    "shoulder_*": {
+      "limits": [-1.5708, 1.5708]
+    },
     "ball*": { "actuated": false },
     "forearm*": { "actuated": false }
+  },
+
+  "geom_properties": {
+    "*": {
+      "collision": {
+        "contype": "1",
+        "conaffinity": "0"
+      }
+    }
   }
 }
