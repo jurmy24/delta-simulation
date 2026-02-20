@@ -1,3 +1,6 @@
-<mujoco>
-  <option timestep="0.0005" solver="Newton" iterations="100" tolerance="1e-10"/>
-</mujoco>
+<!-- 
+  IMPORTANT: This file is included via additional_xml in config.json.
+  It must contain ONLY the content that goes inside <mujoco>, NOT a <mujoco> wrapper.
+  onshape-to-robot inserts this content directly into the existing <mujoco> tag.
+-->
+<option timestep="0.0005" solver="Newton" iterations="100" tolerance="1e-10"/>
