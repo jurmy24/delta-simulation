@@ -2,24 +2,24 @@
 <!-- Generated using onshape-to-robot -->
 <!-- Onshape https://cad.onshape.com/documents/20bfbde5f0dfed09746f3835/w/89e87a07589996b404d06798/e/02e6df3ca634eef0ea4fbf46 -->
 <mujoco model="delta-robot">
-  <compiler angle="radian" meshdir="assets" autolimits="true" boundmass="0.001" boundinertia="1e-6"/>
-  <option solver="Newton" iterations="50" tolerance="1e-10" integrator="implicitfast"/>
+  <compiler angle="radian" meshdir="assets" autolimits="true"/>
+  <option timestep="0.0005" solver="Newton" iterations="100" tolerance="1e-10"/>
   <default>
     <default class="delta-robot">
       <joint frictionloss="0.1" armature="0.005"/>
-      <position kp="50" dampratio="1"/>
+      <position kp="1000" dampratio="1"/>
       <default class="visual">
         <geom type="mesh" contype="0" conaffinity="0" group="2"/>
       </default>
       <default class="collision">
-        <geom group="3"/>
+        <geom group="3" contype="1" conaffinity="0"/>
       </default>
     </default>
   </default>
   <worldbody>
     <!-- Link base_plate -->
     <body name="base_plate" pos="0 0 1" quat="1 0 0 0" childclass="delta-robot">
-      <inertial pos="0 0 0.0259455" mass="0.0210468" fullinertia="6.87617e-05 6.87617e-05 0.000136928 0 0 -0"/>
+      <inertial pos="-0 -0 0.0263746" mass="0.0210468" fullinertia="7.03732e-05 7.03732e-05 0.000140149 -0 2.34842e-07 -4.2395e-08"/>
       <!-- Part rod_mount -->
       <geom type="mesh" class="visual" pos="-0.0303109 -0.0175 -0.01" quat="0.258819 -0 0 0.965926" mesh="rod_mount" material="rod_mount_material"/>
       <geom type="mesh" class="collision" pos="-0.0303109 -0.0175 -0.01" quat="0.258819 -0 0 0.965926" mesh="rod_mount" material="rod_mount_material"/>
@@ -27,14 +27,14 @@
       <geom type="mesh" class="visual" pos="0 0.035 -0.01" quat="0.965926 0 -0 0.258819" mesh="rod_mount" material="rod_mount_material"/>
       <geom type="mesh" class="collision" pos="0 0.035 -0.01" quat="0.965926 0 -0 0.258819" mesh="rod_mount" material="rod_mount_material"/>
       <!-- Part small_pulley -->
-      <geom type="mesh" class="visual" pos="-0.0253209 0.077757 0.026" quat="0.5 -0 0 0.866025" mesh="small_pulley" material="small_pulley_material"/>
-      <geom type="mesh" class="collision" pos="-0.0253209 0.077757 0.026" quat="0.5 -0 0 0.866025" mesh="small_pulley" material="small_pulley_material"/>
+      <geom type="mesh" class="visual" pos="-0.0192587 0.081257 0.0265687" quat="0.5 -0 0 0.866025" mesh="small_pulley" material="small_pulley_material"/>
+      <geom type="mesh" class="collision" pos="-0.0192587 0.081257 0.0265687" quat="0.5 -0 0 0.866025" mesh="small_pulley" material="small_pulley_material"/>
       <!-- Part motor_mount -->
       <geom type="mesh" class="visual" pos="-0 -0 -0.01" quat="0.707107 -0 -0 -0.707107" mesh="motor_mount" material="motor_mount_material"/>
       <geom type="mesh" class="collision" pos="-0 -0 -0.01" quat="0.707107 -0 -0 -0.707107" mesh="motor_mount" material="motor_mount_material"/>
       <!-- Part motor_wire_connector -->
-      <geom type="mesh" class="visual" pos="0.078817 -0.109487 0.0305" quat="0.5 0.5 -0.5 0.5" mesh="motor_wire_connector" material="motor_wire_connector_material"/>
-      <geom type="mesh" class="collision" pos="0.078817 -0.109487 0.0305" quat="0.5 0.5 -0.5 0.5" mesh="motor_wire_connector" material="motor_wire_connector_material"/>
+      <geom type="mesh" class="visual" pos="0.078817 -0.116487 0.03065" quat="0.5 0.5 -0.5 0.5" mesh="motor_wire_connector" material="motor_wire_connector_material"/>
+      <geom type="mesh" class="collision" pos="0.078817 -0.116487 0.03065" quat="0.5 0.5 -0.5 0.5" mesh="motor_wire_connector" material="motor_wire_connector_material"/>
       <!-- Part motor_mount_2 -->
       <geom type="mesh" class="visual" pos="0 -0 -0.01" quat="0.965926 -0 -0 0.258819" mesh="motor_mount" material="motor_mount_material"/>
       <geom type="mesh" class="collision" pos="0 -0 -0.01" quat="0.965926 -0 -0 0.258819" mesh="motor_mount" material="motor_mount_material"/>
@@ -42,14 +42,11 @@
       <geom type="mesh" class="visual" pos="0.0303109 -0.0175 -0.01" quat="0.707107 0 -0 -0.707107" mesh="rod_mount" material="rod_mount_material"/>
       <geom type="mesh" class="collision" pos="0.0303109 -0.0175 -0.01" quat="0.707107 0 -0 -0.707107" mesh="rod_mount" material="rod_mount_material"/>
       <!-- Part motor_wire_connector_2 -->
-      <geom type="mesh" class="visual" pos="0.0554098 0.123001 0.0305" quat="0.183013 -0.683013 -0.183013 -0.683013" mesh="motor_wire_connector" material="motor_wire_connector_material"/>
-      <geom type="mesh" class="collision" pos="0.0554098 0.123001 0.0305" quat="0.183013 -0.683013 -0.183013 -0.683013" mesh="motor_wire_connector" material="motor_wire_connector_material"/>
+      <geom type="mesh" class="visual" pos="0.061472 0.126501 0.0310687" quat="0.183013 -0.683013 -0.183013 -0.683013" mesh="motor_wire_connector" material="motor_wire_connector_material"/>
+      <geom type="mesh" class="collision" pos="0.061472 0.126501 0.0310687" quat="0.183013 -0.683013 -0.183013 -0.683013" mesh="motor_wire_connector" material="motor_wire_connector_material"/>
       <!-- Part rod_mount_4 -->
       <geom type="mesh" class="visual" pos="-0 0 -0.01" quat="0.258819 -0 0 0.965926" mesh="rod_mount" material="rod_mount_material"/>
       <geom type="mesh" class="collision" pos="-0 0 -0.01" quat="0.258819 -0 0 0.965926" mesh="rod_mount" material="rod_mount_material"/>
-      <!-- Part robot_mount -->
-      <geom type="mesh" class="visual" pos="0 -0 -0.01" quat="0.707107 -0 -0 -0.707107" mesh="robot_mount" material="robot_mount_material"/>
-      <geom type="mesh" class="collision" pos="0 -0 -0.01" quat="0.707107 -0 -0 -0.707107" mesh="robot_mount" material="robot_mount_material"/>
       <!-- Part rod_mount_5 -->
       <geom type="mesh" class="visual" pos="0 0 -0.01" quat="0.965926 0 0 0.258819" mesh="rod_mount" material="rod_mount_material"/>
       <geom type="mesh" class="collision" pos="0 0 -0.01" quat="0.965926 0 0 0.258819" mesh="rod_mount" material="rod_mount_material"/>
@@ -60,30 +57,30 @@
       <geom type="mesh" class="visual" pos="0 0 -0.01" quat="0.707107 0 -0 -0.707107" mesh="base_plate" material="base_plate_material"/>
       <geom type="mesh" class="collision" pos="0 0 -0.01" quat="0.707107 0 -0 -0.707107" mesh="base_plate" material="base_plate_material"/>
       <!-- Part motor_mount_3 -->
-      <geom type="mesh" class="visual" pos="-0 0 -0.01" quat="0.258819 -0 0 0.965926" mesh="motor_mount" material="motor_mount_material"/>
-      <geom type="mesh" class="collision" pos="-0 0 -0.01" quat="0.258819 -0 0 0.965926" mesh="motor_mount" material="motor_mount_material"/>
+      <geom type="mesh" class="visual" pos="0 0 -0.01" quat="0.258819 0 -0 0.965926" mesh="motor_mount" material="motor_mount_material"/>
+      <geom type="mesh" class="collision" pos="0 0 -0.01" quat="0.258819 0 -0 0.965926" mesh="motor_mount" material="motor_mount_material"/>
       <!-- Part small_pulley_2 -->
-      <geom type="mesh" class="visual" pos="0.08 -0.01695 0.026" quat="1 -0 0 0" mesh="small_pulley" material="small_pulley_material"/>
-      <geom type="mesh" class="collision" pos="0.08 -0.01695 0.026" quat="1 -0 0 0" mesh="small_pulley" material="small_pulley_material"/>
+      <geom type="mesh" class="visual" pos="0.08 -0.02395 0.02615" quat="1 -0 0 0" mesh="small_pulley" material="small_pulley_material"/>
+      <geom type="mesh" class="collision" pos="0.08 -0.02395 0.02615" quat="1 -0 0 0" mesh="small_pulley" material="small_pulley_material"/>
       <!-- Part motor -->
-      <geom type="mesh" class="visual" pos="-0.0183494 0.081782 0.026" quat="0.683013 0.183013 -0.683013 0.183013" mesh="motor" material="motor_material"/>
-      <geom type="mesh" class="collision" pos="-0.0183494 0.081782 0.026" quat="0.683013 0.183013 -0.683013 0.183013" mesh="motor" material="motor_material"/>
+      <geom type="mesh" class="visual" pos="-0.0122872 0.085282 0.0265687" quat="0.683013 0.183013 -0.683013 0.183013" mesh="motor" material="motor_material"/>
+      <geom type="mesh" class="collision" pos="-0.0122872 0.085282 0.0265687" quat="0.683013 0.183013 -0.683013 0.183013" mesh="motor" material="motor_material"/>
       <!-- Part motor_2 -->
-      <geom type="mesh" class="visual" pos="-0.0616506 -0.056782 0.026" quat="0.183013 0.683013 -0.183013 0.683013" mesh="motor" material="motor_material"/>
-      <geom type="mesh" class="collision" pos="-0.0616506 -0.056782 0.026" quat="0.183013 0.683013 -0.183013 0.683013" mesh="motor" material="motor_material"/>
+      <geom type="mesh" class="visual" pos="-0.0677128 -0.053282 0.0265687" quat="0.183013 0.683013 -0.183013 0.683013" mesh="motor" material="motor_material"/>
+      <geom type="mesh" class="collision" pos="-0.0677128 -0.053282 0.0265687" quat="0.183013 0.683013 -0.183013 0.683013" mesh="motor" material="motor_material"/>
       <!-- Part motor_3 -->
-      <geom type="mesh" class="visual" pos="0.08 -0.025 0.026" quat="0.5 -0.5 -0.5 -0.5" mesh="motor" material="motor_material"/>
-      <geom type="mesh" class="collision" pos="0.08 -0.025 0.026" quat="0.5 -0.5 -0.5 -0.5" mesh="motor" material="motor_material"/>
+      <geom type="mesh" class="visual" pos="0.08 -0.032 0.02615" quat="0.5 -0.5 -0.5 -0.5" mesh="motor" material="motor_material"/>
+      <geom type="mesh" class="collision" pos="0.08 -0.032 0.02615" quat="0.5 -0.5 -0.5 -0.5" mesh="motor" material="motor_material"/>
       <!-- Part motor_wire_connector_3 -->
-      <geom type="mesh" class="visual" pos="-0.134227 -0.0135141 0.0305" quat="0.683013 -0.183013 -0.683013 -0.183013" mesh="motor_wire_connector" material="motor_wire_connector_material"/>
-      <geom type="mesh" class="collision" pos="-0.134227 -0.0135141 0.0305" quat="0.683013 -0.183013 -0.683013 -0.183013" mesh="motor_wire_connector" material="motor_wire_connector_material"/>
+      <geom type="mesh" class="visual" pos="-0.140289 -0.0100141 0.0310687" quat="0.683013 -0.183013 -0.683013 -0.183013" mesh="motor_wire_connector" material="motor_wire_connector_material"/>
+      <geom type="mesh" class="collision" pos="-0.140289 -0.0100141 0.0310687" quat="0.683013 -0.183013 -0.683013 -0.183013" mesh="motor_wire_connector" material="motor_wire_connector_material"/>
       <!-- Part small_pulley_3 -->
-      <geom type="mesh" class="visual" pos="-0.0546791 -0.060807 0.026" quat="0.5 -0 0 -0.866025" mesh="small_pulley" material="small_pulley_material"/>
-      <geom type="mesh" class="collision" pos="-0.0546791 -0.060807 0.026" quat="0.5 -0 0 -0.866025" mesh="small_pulley" material="small_pulley_material"/>
+      <geom type="mesh" class="visual" pos="-0.0607413 -0.057307 0.0265687" quat="0.5 -0 -0 -0.866025" mesh="small_pulley" material="small_pulley_material"/>
+      <geom type="mesh" class="collision" pos="-0.0607413 -0.057307 0.0265687" quat="0.5 -0 -0 -0.866025" mesh="small_pulley" material="small_pulley_material"/>
       <!-- Link rod -->
-      <body name="rod" pos="0.08 0.071 -0.0275" quat="0.641076 -0.641076 0.298364 0.298364">
+      <body name="rod" pos="0.08 0.0735 -0.0275" quat="0.620747 -0.620747 0.338634 0.338634">
         <!-- Joint from base_plate to rod -->
-        <joint axis="0 0 1" name="shoulder_1" type="hinge"/>
+        <joint axis="0 0 1" name="shoulder_1" type="hinge" range="-1.5708 1.5708"/>
         <inertial pos="1.61471e-05 -1.61475e-05 -0.0769634" mass="0.0496325" fullinertia="5.80508e-06 5.80508e-06 8.65485e-06 -1.3e-11 7.463e-09 -7.463e-09"/>
         <!-- Part biltema_pushrod_screw -->
         <geom type="mesh" class="visual" pos="0.15 -0 -0.08405" quat="0.707081 0.00609597 0.00261695 -0.707102" mesh="biltema_pushrod_screw" material="biltema_pushrod_screw_material"/>
@@ -95,33 +92,33 @@
         <geom type="mesh" class="visual" pos="0.15 -0 -0.04405" quat="0.00261695 0.707102 -0.707081 0.00609597" mesh="biltema_pushrod_screw" material="biltema_pushrod_screw_material"/>
         <geom type="mesh" class="collision" pos="0.15 -0 -0.04405" quat="0.00261695 0.707102 -0.707081 0.00609597" mesh="biltema_pushrod_screw" material="biltema_pushrod_screw_material"/>
         <!-- Part rod -->
-        <geom type="mesh" class="visual" pos="-0.08 -0.0175 -0.071" quat="0.683013 0.683013 -0.183013 0.183013" mesh="rod" material="rod_material"/>
-        <geom type="mesh" class="collision" pos="-0.08 -0.0175 -0.071" quat="0.683013 0.683013 -0.183013 0.183013" mesh="rod" material="rod_material"/>
+        <geom type="mesh" class="visual" pos="-0.08 -0.0175 -0.0735" quat="0.683013 0.683013 -0.183013 0.183013" mesh="rod" material="rod_material"/>
+        <geom type="mesh" class="collision" pos="-0.08 -0.0175 -0.0735" quat="0.683013 0.683013 -0.183013 0.183013" mesh="rod" material="rod_material"/>
         <!-- Part big_pulley -->
-        <geom type="mesh" class="visual" pos="-0 0 -0.09" quat="0 -0 0.707107 0.707107" mesh="big_pulley" material="big_pulley_material"/>
-        <geom type="mesh" class="collision" pos="-0 0 -0.09" quat="0 -0 0.707107 0.707107" mesh="big_pulley" material="big_pulley_material"/>
+        <geom type="mesh" class="visual" pos="0 -0 -0.09" quat="0 -0 0.707107 0.707107" mesh="big_pulley" material="big_pulley_material"/>
+        <geom type="mesh" class="collision" pos="0 -0 -0.09" quat="0 -0 0.707107 0.707107" mesh="big_pulley" material="big_pulley_material"/>
         <!-- Link push_rod_chassis -->
-        <body name="push_rod_chassis" pos="0.15 -0 -0.08405" quat="0.0304985 -0.799799 -0.591991 -0.0945438">
+        <body name="push_rod_chassis" pos="0.15 -0 -0.08405" quat="0.000194048 -0.830226 -0.55399 -0.0618069">
           <!-- Joint from rod to push_rod_chassis -->
           <joint axis="0 0 1" name="ball1_arm1" type="ball"/>
           <inertial pos="0 0 0" mass="1e-09" fullinertia="1e-09 1e-09 1e-09 0 0 0"/>
           <!-- Part forearm -->
-          <geom type="mesh" class="visual" pos="0.2558 0 0" quat="0.707107 -0 -0.707107 0" mesh="forearm" material="forearm_material"/>
-          <geom type="mesh" class="collision" pos="0.2558 0 0" quat="0.707107 -0 -0.707107 0" mesh="forearm" material="forearm_material"/>
+          <geom type="mesh" class="visual" pos="0.2558 0 0" quat="0.707107 -0 -0.707107 -0" mesh="forearm" material="forearm_material"/>
+          <geom type="mesh" class="collision" pos="0.2558 0 0" quat="0.707107 -0 -0.707107 -0" mesh="forearm" material="forearm_material"/>
           <!-- Part push_rod_chassis -->
-          <geom type="mesh" class="visual" pos="0.2658 0 -0.005" quat="1 0 0 0" mesh="push_rod_chassis" material="push_rod_chassis_material"/>
-          <geom type="mesh" class="collision" pos="0.2658 0 -0.005" quat="1 0 0 0" mesh="push_rod_chassis" material="push_rod_chassis_material"/>
+          <geom type="mesh" class="visual" pos="0.2648 0 -0.005" quat="1 0 0 0" mesh="push_rod_chassis" material="push_rod_chassis_material"/>
+          <geom type="mesh" class="collision" pos="0.2648 0 -0.005" quat="1 0 0 0" mesh="push_rod_chassis" material="push_rod_chassis_material"/>
           <!-- Part biltema_pushrod_chassis -->
-          <geom type="mesh" class="visual" pos="0 0 0" quat="1 0 0 0" mesh="biltema_pushrod_chassis" material="biltema_pushrod_chassis_material"/>
-          <geom type="mesh" class="collision" pos="0 0 0" quat="1 0 0 0" mesh="biltema_pushrod_chassis" material="biltema_pushrod_chassis_material"/>
+          <geom type="mesh" class="visual" pos="0 -0 0" quat="1 0 0 -0" mesh="biltema_pushrod_chassis" material="biltema_pushrod_chassis_material"/>
+          <geom type="mesh" class="collision" pos="0 -0 0" quat="1 0 0 -0" mesh="biltema_pushrod_chassis" material="biltema_pushrod_chassis_material"/>
           <!-- Link push_rod_ball -->
-          <body name="push_rod_ball" pos="0.2658 0 0" quat="0.0956596 -0.87148 0.475225 -0.0743801">
+          <body name="push_rod_ball" pos="0.2648 0 0" quat="0.0690489 -0.887131 0.455183 -0.0322382">
             <!-- Joint from push_rod_chassis to push_rod_ball -->
             <joint axis="0 0 1" name="ball3_arm1" type="ball"/>
             <inertial pos="0.0273205 -0 0.0168" mass="0.0264384" fullinertia="1.38592e-05 2.75665e-05 1.38592e-05 0 0 -0"/>
             <!-- Part ph_pan_head_screw_m5x0_80_x_20__cc5a28f66c81927f4b0c3b2d4528a18f -->
-            <geom type="mesh" class="visual" pos="0 0 0.0425" quat="0.707107 -0 0 -0.707107" mesh="ph_pan_head_screw_m5x0_80_x_20__cc5a28f66c81927f4b0c3b2d4528a18f" material="ph_pan_head_screw_m5x0_80_x_20__cc5a28f66c81927f4b0c3b2d4528a18f_material"/>
-            <geom type="mesh" class="collision" pos="0 0 0.0425" quat="0.707107 -0 0 -0.707107" mesh="ph_pan_head_screw_m5x0_80_x_20__cc5a28f66c81927f4b0c3b2d4528a18f" material="ph_pan_head_screw_m5x0_80_x_20__cc5a28f66c81927f4b0c3b2d4528a18f_material"/>
+            <geom type="mesh" class="visual" pos="-0 -0 0.0425" quat="0.707107 -0 0 -0.707107" mesh="ph_pan_head_screw_m5x0_80_x_20__cc5a28f66c81927f4b0c3b2d4528a18f" material="ph_pan_head_screw_m5x0_80_x_20__cc5a28f66c81927f4b0c3b2d4528a18f_material"/>
+            <geom type="mesh" class="collision" pos="-0 -0 0.0425" quat="0.707107 -0 0 -0.707107" mesh="ph_pan_head_screw_m5x0_80_x_20__cc5a28f66c81927f4b0c3b2d4528a18f" material="ph_pan_head_screw_m5x0_80_x_20__cc5a28f66c81927f4b0c3b2d4528a18f_material"/>
             <!-- Part ph_pan_head_screw_m5x0_80_x_20__cc5a28f66c81927f4b0c3b2d4528a18f_2 -->
             <geom type="mesh" class="visual" pos="0.0632376 -0 0.00598975" quat="0 0.5 0 0.866025" mesh="ph_pan_head_screw_m5x0_80_x_20__cc5a28f66c81927f4b0c3b2d4528a18f" material="ph_pan_head_screw_m5x0_80_x_20__cc5a28f66c81927f4b0c3b2d4528a18f_material"/>
             <geom type="mesh" class="collision" pos="0.0632376 -0 0.00598975" quat="0 0.5 0 0.866025" mesh="ph_pan_head_screw_m5x0_80_x_20__cc5a28f66c81927f4b0c3b2d4528a18f" material="ph_pan_head_screw_m5x0_80_x_20__cc5a28f66c81927f4b0c3b2d4528a18f_material"/>
@@ -147,11 +144,11 @@
             <geom type="mesh" class="visual" pos="0.0187239 0 0.0533103" quat="0.612372 0.353553 -0.353553 -0.612372" mesh="ph_pan_head_screw_m5x0_80_x_20__cc5a28f66c81927f4b0c3b2d4528a18f" material="ph_pan_head_screw_m5x0_80_x_20__cc5a28f66c81927f4b0c3b2d4528a18f_material"/>
             <geom type="mesh" class="collision" pos="0.0187239 0 0.0533103" quat="0.612372 0.353553 -0.353553 -0.612372" mesh="ph_pan_head_screw_m5x0_80_x_20__cc5a28f66c81927f4b0c3b2d4528a18f" material="ph_pan_head_screw_m5x0_80_x_20__cc5a28f66c81927f4b0c3b2d4528a18f_material"/>
             <!-- Part push_rod_ball_5 -->
-            <geom type="mesh" class="visual" pos="0 -0 -0.005" quat="1 -0 -0 0" mesh="push_rod_ball" material="push_rod_ball_material"/>
-            <geom type="mesh" class="collision" pos="0 -0 -0.005" quat="1 -0 -0 0" mesh="push_rod_ball" material="push_rod_ball_material"/>
+            <geom type="mesh" class="visual" pos="0 0 -0.005" quat="1 0 -0 -0" mesh="push_rod_ball" material="push_rod_ball_material"/>
+            <geom type="mesh" class="collision" pos="0 0 -0.005" quat="1 0 -0 -0" mesh="push_rod_ball" material="push_rod_ball_material"/>
             <!-- Part push_rod_ball_6 -->
-            <geom type="mesh" class="visual" pos="0 0 0.0386" quat="0 -1 -0 0" mesh="push_rod_ball" material="push_rod_ball_material"/>
-            <geom type="mesh" class="collision" pos="0 0 0.0386" quat="0 -1 -0 0" mesh="push_rod_ball" material="push_rod_ball_material"/>
+            <geom type="mesh" class="visual" pos="-0 -0 0.0386" quat="0 -1 -0 0" mesh="push_rod_ball" material="push_rod_ball_material"/>
+            <geom type="mesh" class="collision" pos="-0 -0 0.0386" quat="0 -1 -0 0" mesh="push_rod_ball" material="push_rod_ball_material"/>
             <!-- Part bts2_motor -->
             <geom type="mesh" class="visual" pos="0.132755 -0.0248717 -0.177303" quat="0.612372 0.353553 0.353553 0.612372" mesh="bts2_motor" material="bts2_motor_material"/>
             <geom type="mesh" class="collision" pos="0.132755 -0.0248717 -0.177303" quat="0.612372 0.353553 0.353553 0.612372" mesh="bts2_motor" material="bts2_motor_material"/>
@@ -159,10 +156,10 @@
             <geom type="mesh" class="visual" pos="0.0273205 0.005 0.0168" quat="0.683013 0.683013 -0.183013 0.183013" mesh="end_effector_plate" material="end_effector_plate_material"/>
             <geom type="mesh" class="collision" pos="0.0273205 0.005 0.0168" quat="0.683013 0.683013 -0.183013 0.183013" mesh="end_effector_plate" material="end_effector_plate_material"/>
             <!-- Part ph_pan_head_screw_m5x0_80_x_20__cc5a28f66c81927f4b0c3b2d4528a18f_6 -->
-            <geom type="mesh" class="visual" pos="-0 -0 -0.0089" quat="0 0.707107 -0.707107 0" mesh="ph_pan_head_screw_m5x0_80_x_20__cc5a28f66c81927f4b0c3b2d4528a18f" material="ph_pan_head_screw_m5x0_80_x_20__cc5a28f66c81927f4b0c3b2d4528a18f_material"/>
-            <geom type="mesh" class="collision" pos="-0 -0 -0.0089" quat="0 0.707107 -0.707107 0" mesh="ph_pan_head_screw_m5x0_80_x_20__cc5a28f66c81927f4b0c3b2d4528a18f" material="ph_pan_head_screw_m5x0_80_x_20__cc5a28f66c81927f4b0c3b2d4528a18f_material"/>
+            <geom type="mesh" class="visual" pos="0 0 -0.0089" quat="0 -0.707107 0.707107 -0" mesh="ph_pan_head_screw_m5x0_80_x_20__cc5a28f66c81927f4b0c3b2d4528a18f" material="ph_pan_head_screw_m5x0_80_x_20__cc5a28f66c81927f4b0c3b2d4528a18f_material"/>
+            <geom type="mesh" class="collision" pos="0 0 -0.0089" quat="0 -0.707107 0.707107 -0" mesh="ph_pan_head_screw_m5x0_80_x_20__cc5a28f66c81927f4b0c3b2d4528a18f" material="ph_pan_head_screw_m5x0_80_x_20__cc5a28f66c81927f4b0c3b2d4528a18f_material"/>
             <!-- Frame closing_ball4_arm1_1 -->
-            <site group="3" name="closing_ball4_arm1_1" pos="0 0 0.0336" quat="0 -1 -0 0"/>
+            <site group="3" name="closing_ball4_arm1_1" pos="-0 -0 0.0336" quat="0 -1 -0 0"/>
             <!-- Frame closing_ball2_forearm2_1 -->
             <site group="3" name="closing_ball2_forearm2_1" pos="0.05553 -0 0.0320603" quat="0.612372 -0.353553 -0.353553 0.612372"/>
             <!-- Frame closing_ball1_forearm2_1 -->
@@ -172,9 +169,9 @@
             <!-- Frame closing_forearm3A_plate_1 -->
             <site group="3" name="closing_forearm3A_plate_1" pos="0.05553 -0 0.00153975" quat="0.353553 -0.612372 -0.612372 0.353553"/>
             <!-- Link gripper_shoulder -->
-            <body name="gripper_shoulder" pos="0.0217205 -0.0295 0.0264995" quat="0.0392811 0.954736 0.146599 0.255821">
+            <body name="gripper_shoulder" pos="0.0217205 -0.0295 0.0264995" quat="0.0405485 0.953998 0.151329 0.255623">
               <!-- Joint from push_rod_ball to gripper_shoulder -->
-              <joint axis="0 0 1" name="flexion_extension" type="hinge" range="-1.266077767264756 1.875514886325037"/>
+              <joint axis="0 0 1" name="flexion_extension" type="hinge" range="-1.2561655579930566 1.8854270955967365"/>
               <inertial pos="0 0 0" mass="1e-09" fullinertia="1e-09 1e-09 1e-09 0 0 0"/>
               <!-- Part bts2_motor_wheel -->
               <geom type="mesh" class="visual" pos="-0.00462832 -0.00574256 -0.186615" quat="0 -0 0.707107 0.707107" mesh="bts2_motor_wheel" material="bts2_motor_wheel_material"/>
@@ -189,9 +186,9 @@
               <geom type="mesh" class="visual" pos="0.00573512 -0.190315 0.000831647" quat="0.707107 0 -0.707107 0" mesh="bts2_motor" material="bts2_motor_material"/>
               <geom type="mesh" class="collision" pos="0.00573512 -0.190315 0.000831647" quat="0.707107 0 -0.707107 0" mesh="bts2_motor" material="bts2_motor_material"/>
               <!-- Link bts2_motor -->
-              <body name="bts2_motor" pos="-7.44154e-06 0.0417 -0.00379668" quat="0.0305544 0.0305544 0.706446 -0.706446">
+              <body name="bts2_motor" pos="-7.44154e-06 0.0417 -0.00379668" quat="0.0282139 0.0282139 0.706544 -0.706544">
                 <!-- Joint from gripper_shoulder to bts2_motor -->
-                <joint axis="0 0 1" name="pronation_supination" type="hinge" range="-4.798836900051059 1.4843484071285267"/>
+                <joint axis="0 0 1" name="pronation_supination" type="hinge" range="-4.792211203389326 1.4909741037902606"/>
                 <inertial pos="0 0 0" mass="1e-09" fullinertia="1e-09 1e-09 1e-09 0 0 0"/>
                 <!-- Part bts2_motor_wheel_3 -->
                 <geom type="mesh" class="visual" pos="0.00462832 -0.00574256 0.206315" quat="0.707107 -0.707107 -0 -0" mesh="bts2_motor_wheel" material="bts2_motor_wheel_material"/>
@@ -203,9 +200,9 @@
                 <geom type="mesh" class="visual" pos="-0.00277168 0.221065 -0.0123074" quat="0 -1 -0 -0" mesh="bts2_motor" material="bts2_motor_material"/>
                 <geom type="mesh" class="collision" pos="-0.00277168 0.221065 -0.0123074" quat="0 -1 -0 -0" mesh="bts2_motor" material="bts2_motor_material"/>
                 <!-- Link mobile_gripper_side -->
-                <body name="mobile_gripper_side" pos="-0.0074 -0.01095 -0.01805" quat="0.694404 -0.694404 0.133429 0.133429">
+                <body name="mobile_gripper_side" pos="-0.0074 -0.01095 -0.01805" quat="0.694299 -0.694299 0.133972 0.133972">
                   <!-- Joint from bts2_motor to mobile_gripper_side -->
-                  <joint axis="0 0 1" name="gripper" type="hinge" range="-0.3796707064518071 1.1911256203430893"/>
+                  <joint axis="0 0 1" name="gripper" type="hinge" range="-0.3812336274243828 1.1895626993705137"/>
                   <inertial pos="0 0 0" mass="1e-09" fullinertia="1e-09 1e-09 1e-09 0 0 0"/>
                   <!-- Part bts2_motor_wheel_4 -->
                   <geom type="mesh" class="visual" pos="0.00462832 -0.00574256 0.206315" quat="0.707107 -0.707107 -0 -0" mesh="bts2_motor_wheel" material="bts2_motor_wheel_material"/>
@@ -222,117 +219,117 @@
           </body>
         </body>
         <!-- Link push_rod_chassis_2 -->
-        <body name="push_rod_chassis_2" pos="0.15 -0 -0.04405" quat="0.781681 0.179511 0.0326214 0.596395">
+        <body name="push_rod_chassis_2" pos="0.15 -0 -0.04405" quat="0.816514 0.156459 0.0577694 0.552711">
           <!-- Joint from rod to push_rod_chassis_2 -->
           <joint axis="0 0 1" name="ball2_arm1" type="ball"/>
           <inertial pos="0 0 0" mass="1e-09" fullinertia="1e-09 1e-09 1e-09 0 0 0"/>
           <!-- Part forearm_2 -->
-          <geom type="mesh" class="visual" pos="0.2558 -0 0" quat="0 -0.707107 -0 0.707107" mesh="forearm" material="forearm_material"/>
-          <geom type="mesh" class="collision" pos="0.2558 -0 0" quat="0 -0.707107 -0 0.707107" mesh="forearm" material="forearm_material"/>
+          <geom type="mesh" class="visual" pos="0.2558 -0 0" quat="0 -0.707107 0 0.707107" mesh="forearm" material="forearm_material"/>
+          <geom type="mesh" class="collision" pos="0.2558 -0 0" quat="0 -0.707107 0 0.707107" mesh="forearm" material="forearm_material"/>
           <!-- Part biltema_pushrod_chassis_2 -->
-          <geom type="mesh" class="visual" pos="0 -0 0" quat="1 -0 -0 0" mesh="biltema_pushrod_chassis" material="biltema_pushrod_chassis_material"/>
-          <geom type="mesh" class="collision" pos="0 -0 0" quat="1 -0 -0 0" mesh="biltema_pushrod_chassis" material="biltema_pushrod_chassis_material"/>
+          <geom type="mesh" class="visual" pos="-0 0 0" quat="1 -0 -0 0" mesh="biltema_pushrod_chassis" material="biltema_pushrod_chassis_material"/>
+          <geom type="mesh" class="collision" pos="-0 0 0" quat="1 -0 -0 0" mesh="biltema_pushrod_chassis" material="biltema_pushrod_chassis_material"/>
           <!-- Part push_rod_chassis_2 -->
-          <geom type="mesh" class="visual" pos="0.2658 -0 0.005" quat="0 1 -0 0" mesh="push_rod_chassis" material="push_rod_chassis_material"/>
-          <geom type="mesh" class="collision" pos="0.2658 -0 0.005" quat="0 1 -0 0" mesh="push_rod_chassis" material="push_rod_chassis_material"/>
+          <geom type="mesh" class="visual" pos="0.2648 -0 0.005" quat="0 1 -0 0" mesh="push_rod_chassis" material="push_rod_chassis_material"/>
+          <geom type="mesh" class="collision" pos="0.2648 -0 0.005" quat="0 1 -0 0" mesh="push_rod_chassis" material="push_rod_chassis_material"/>
           <!-- Frame closing_ball4_arm1_2 -->
-          <site group="3" name="closing_ball4_arm1_2" pos="0.2658 -0 0" quat="0.707107 -0 0 0.707107"/>
+          <site group="3" name="closing_ball4_arm1_2" pos="0.2648 -0 0" quat="0.707107 -0 -0 0.707107"/>
         </body>
       </body>
       <!-- Link rod_2 -->
-      <body name="rod_2" pos="-0.101488 0.033782 -0.0275" quat="0.108723 -0.550729 -0.443506 0.698698">
+      <body name="rod_2" pos="-0.0980237 0.035782 -0.0275" quat="0.0862314 -0.564686 -0.425593 0.701829">
         <!-- Joint from base_plate to rod_2 -->
-        <joint axis="0 0 1" name="shoulder_2" type="hinge"/>
+        <joint axis="0 0 1" name="shoulder_2" type="hinge" range="-1.5708 1.5708"/>
         <inertial pos="1.61471e-05 -1.61475e-05 -0.0769634" mass="0.0496325" fullinertia="5.80508e-06 5.80508e-06 8.65485e-06 -1.3e-11 7.463e-09 -7.463e-09"/>
         <!-- Part biltema_pushrod_screw_3 -->
-        <geom type="mesh" class="visual" pos="0.15 -0 -0.04405" quat="0.00261695 0.707102 -0.707081 0.00609597" mesh="biltema_pushrod_screw" material="biltema_pushrod_screw_material"/>
-        <geom type="mesh" class="collision" pos="0.15 -0 -0.04405" quat="0.00261695 0.707102 -0.707081 0.00609597" mesh="biltema_pushrod_screw" material="biltema_pushrod_screw_material"/>
+        <geom type="mesh" class="visual" pos="0.15 0 -0.04405" quat="0.00261695 0.707102 -0.707081 0.00609597" mesh="biltema_pushrod_screw" material="biltema_pushrod_screw_material"/>
+        <geom type="mesh" class="collision" pos="0.15 0 -0.04405" quat="0.00261695 0.707102 -0.707081 0.00609597" mesh="biltema_pushrod_screw" material="biltema_pushrod_screw_material"/>
         <!-- Part big_pulley_2 -->
-        <geom type="mesh" class="visual" pos="-0 -0 -0.09" quat="0 -0 -0.707107 -0.707107" mesh="big_pulley" material="big_pulley_material"/>
-        <geom type="mesh" class="collision" pos="-0 -0 -0.09" quat="0 -0 -0.707107 -0.707107" mesh="big_pulley" material="big_pulley_material"/>
+        <geom type="mesh" class="visual" pos="0 -0 -0.09" quat="0 -0 0.707107 0.707107" mesh="big_pulley" material="big_pulley_material"/>
+        <geom type="mesh" class="collision" pos="0 -0 -0.09" quat="0 -0 0.707107 0.707107" mesh="big_pulley" material="big_pulley_material"/>
         <!-- Part rod_2 -->
-        <geom type="mesh" class="visual" pos="-0.08 -0.0175 -0.071" quat="0.683013 0.683013 -0.183013 0.183013" mesh="rod" material="rod_material"/>
-        <geom type="mesh" class="collision" pos="-0.08 -0.0175 -0.071" quat="0.683013 0.683013 -0.183013 0.183013" mesh="rod" material="rod_material"/>
+        <geom type="mesh" class="visual" pos="-0.08 -0.0175 -0.0735" quat="0.683013 0.683013 -0.183013 0.183013" mesh="rod" material="rod_material"/>
+        <geom type="mesh" class="collision" pos="-0.08 -0.0175 -0.0735" quat="0.683013 0.683013 -0.183013 0.183013" mesh="rod" material="rod_material"/>
         <!-- Part biltema_pushrod_screw_4 -->
         <geom type="mesh" class="visual" pos="0.15 -0 -0.08405" quat="0.707081 0.00609597 0.00261695 -0.707102" mesh="biltema_pushrod_screw" material="biltema_pushrod_screw_material"/>
         <geom type="mesh" class="collision" pos="0.15 -0 -0.08405" quat="0.707081 0.00609597 0.00261695 -0.707102" mesh="biltema_pushrod_screw" material="biltema_pushrod_screw_material"/>
         <!-- Part upper_arm_2 -->
-        <geom type="mesh" class="visual" pos="0.075 -0 -0.06405" quat="0.5 0.5 -0.5 0.5" mesh="upper_arm" material="upper_arm_material"/>
-        <geom type="mesh" class="collision" pos="0.075 -0 -0.06405" quat="0.5 0.5 -0.5 0.5" mesh="upper_arm" material="upper_arm_material"/>
+        <geom type="mesh" class="visual" pos="0.075 0 -0.06405" quat="0.5 0.5 -0.5 0.5" mesh="upper_arm" material="upper_arm_material"/>
+        <geom type="mesh" class="collision" pos="0.075 0 -0.06405" quat="0.5 0.5 -0.5 0.5" mesh="upper_arm" material="upper_arm_material"/>
         <!-- Link push_rod_chassis_3 -->
-        <body name="push_rod_chassis_3" pos="0.15 0 -0.04405" quat="0.177799 -0.77264 -0.563004 0.233327">
+        <body name="push_rod_chassis_3" pos="0.15 -0 -0.04405" quat="0.22183 -0.784331 -0.551392 0.177718">
           <!-- Joint from rod_2 to push_rod_chassis_3 -->
           <joint axis="0 0 1" name="ball2_arm2" type="ball"/>
           <inertial pos="0 0 0" mass="1e-09" fullinertia="1e-09 1e-09 1e-09 0 0 0"/>
           <!-- Part biltema_pushrod_chassis_3 -->
-          <geom type="mesh" class="visual" pos="0 0 0" quat="1 0 0 0" mesh="biltema_pushrod_chassis" material="biltema_pushrod_chassis_material"/>
-          <geom type="mesh" class="collision" pos="0 0 0" quat="1 0 0 0" mesh="biltema_pushrod_chassis" material="biltema_pushrod_chassis_material"/>
+          <geom type="mesh" class="visual" pos="0 0 -0" quat="1 0 0 -0" mesh="biltema_pushrod_chassis" material="biltema_pushrod_chassis_material"/>
+          <geom type="mesh" class="collision" pos="0 0 -0" quat="1 0 0 -0" mesh="biltema_pushrod_chassis" material="biltema_pushrod_chassis_material"/>
           <!-- Part forearm_3 -->
-          <geom type="mesh" class="visual" pos="0.2558 -0 0" quat="0 -0.707107 0 0.707107" mesh="forearm" material="forearm_material"/>
-          <geom type="mesh" class="collision" pos="0.2558 -0 0" quat="0 -0.707107 0 0.707107" mesh="forearm" material="forearm_material"/>
+          <geom type="mesh" class="visual" pos="0.2558 0 0" quat="0 -0.707107 0 0.707107" mesh="forearm" material="forearm_material"/>
+          <geom type="mesh" class="collision" pos="0.2558 0 0" quat="0 -0.707107 0 0.707107" mesh="forearm" material="forearm_material"/>
           <!-- Part push_rod_chassis_3 -->
-          <geom type="mesh" class="visual" pos="0.2658 -0 0.005" quat="0 1 -0 0" mesh="push_rod_chassis" material="push_rod_chassis_material"/>
-          <geom type="mesh" class="collision" pos="0.2658 -0 0.005" quat="0 1 -0 0" mesh="push_rod_chassis" material="push_rod_chassis_material"/>
+          <geom type="mesh" class="visual" pos="0.2648 -0 0.005" quat="0 1 -0 0" mesh="push_rod_chassis" material="push_rod_chassis_material"/>
+          <geom type="mesh" class="collision" pos="0.2648 -0 0.005" quat="0 1 -0 0" mesh="push_rod_chassis" material="push_rod_chassis_material"/>
           <!-- Frame closing_ball2_forearm2_2 -->
-          <site group="3" name="closing_ball2_forearm2_2" pos="0.2658 -0 0" quat="0.707107 -0 0 0.707107"/>
+          <site group="3" name="closing_ball2_forearm2_2" pos="0.2648 -0 0" quat="0.707107 -0 0 0.707107"/>
         </body>
         <!-- Link push_rod_chassis_4 -->
-        <body name="push_rod_chassis_4" pos="0.15 -0 -0.08405" quat="0.643414 0.463998 0.422222 0.438695">
+        <body name="push_rod_chassis_4" pos="0.15 -0 -0.08405" quat="0.293643 0.760043 0.542966 0.203215">
           <!-- Joint from rod_2 to push_rod_chassis_4 -->
           <joint axis="0 0 1" name="ball1_arm2" type="ball"/>
           <inertial pos="0 0 0" mass="1e-09" fullinertia="1e-09 1e-09 1e-09 0 0 0"/>
           <!-- Part push_rod_chassis_4 -->
-          <geom type="mesh" class="visual" pos="0.2658 0 -0.005" quat="1 0 -0 -0" mesh="push_rod_chassis" material="push_rod_chassis_material"/>
-          <geom type="mesh" class="collision" pos="0.2658 0 -0.005" quat="1 0 -0 -0" mesh="push_rod_chassis" material="push_rod_chassis_material"/>
+          <geom type="mesh" class="visual" pos="0.2648 -0 -0.005" quat="1 0 0 -0" mesh="push_rod_chassis" material="push_rod_chassis_material"/>
+          <geom type="mesh" class="collision" pos="0.2648 -0 -0.005" quat="1 0 0 -0" mesh="push_rod_chassis" material="push_rod_chassis_material"/>
           <!-- Part biltema_pushrod_chassis_4 -->
-          <geom type="mesh" class="visual" pos="0 -0 0" quat="1 -0 -0 -0" mesh="biltema_pushrod_chassis" material="biltema_pushrod_chassis_material"/>
-          <geom type="mesh" class="collision" pos="0 -0 0" quat="1 -0 -0 -0" mesh="biltema_pushrod_chassis" material="biltema_pushrod_chassis_material"/>
+          <geom type="mesh" class="visual" pos="0 0 0" quat="1 0 0 0" mesh="biltema_pushrod_chassis" material="biltema_pushrod_chassis_material"/>
+          <geom type="mesh" class="collision" pos="0 0 0" quat="1 0 0 0" mesh="biltema_pushrod_chassis" material="biltema_pushrod_chassis_material"/>
           <!-- Part forearm_4 -->
           <geom type="mesh" class="visual" pos="0.2558 0 -0" quat="0.707107 0 -0.707107 -0" mesh="forearm" material="forearm_material"/>
           <geom type="mesh" class="collision" pos="0.2558 0 -0" quat="0.707107 0 -0.707107 -0" mesh="forearm" material="forearm_material"/>
           <!-- Frame closing_ball1_forearm2_2 -->
-          <site group="3" name="closing_ball1_forearm2_2" pos="0.2658 0 -0" quat="0.707107 -0 -0 0.707107"/>
+          <site group="3" name="closing_ball1_forearm2_2" pos="0.2648 0 -0" quat="0.707107 0 0 0.707107"/>
         </body>
       </body>
       <!-- Link rod_3 -->
-      <body name="rod_3" pos="0.0214878 -0.104782 -0.0275" quat="0.618643 0.0127403 0.706992 -0.342463">
+      <body name="rod_3" pos="0.0236529 -0.106032 -0.0275" quat="0.609821 -0.00507169 0.707089 -0.357937">
         <!-- Joint from base_plate to rod_3 -->
-        <joint axis="0 0 1" name="shoulder_3" type="hinge"/>
+        <joint axis="0 0 1" name="shoulder_3" type="hinge" range="-1.5708 1.5708"/>
         <inertial pos="1.61471e-05 -1.61475e-05 -0.0769634" mass="0.0496325" fullinertia="5.80508e-06 5.80508e-06 8.65485e-06 -1.3e-11 7.463e-09 -7.463e-09"/>
         <!-- Part biltema_pushrod_screw_5 -->
-        <geom type="mesh" class="visual" pos="0.15 0 -0.08405" quat="0.707102 -0.00261695 0.00609597 0.707081" mesh="biltema_pushrod_screw" material="biltema_pushrod_screw_material"/>
-        <geom type="mesh" class="collision" pos="0.15 0 -0.08405" quat="0.707102 -0.00261695 0.00609597 0.707081" mesh="biltema_pushrod_screw" material="biltema_pushrod_screw_material"/>
+        <geom type="mesh" class="visual" pos="0.15 -0 -0.08405" quat="0.707102 -0.00261695 0.00609597 0.707081" mesh="biltema_pushrod_screw" material="biltema_pushrod_screw_material"/>
+        <geom type="mesh" class="collision" pos="0.15 -0 -0.08405" quat="0.707102 -0.00261695 0.00609597 0.707081" mesh="biltema_pushrod_screw" material="biltema_pushrod_screw_material"/>
         <!-- Part biltema_pushrod_screw_6 -->
-        <geom type="mesh" class="visual" pos="0.15 0 -0.04405" quat="0.00246004 -0.999978 -1.51566e-05 -0.00616096" mesh="biltema_pushrod_screw" material="biltema_pushrod_screw_material"/>
-        <geom type="mesh" class="collision" pos="0.15 0 -0.04405" quat="0.00246004 -0.999978 -1.51566e-05 -0.00616096" mesh="biltema_pushrod_screw" material="biltema_pushrod_screw_material"/>
+        <geom type="mesh" class="visual" pos="0.15 -0 -0.04405" quat="0.00246004 -0.999978 -1.51566e-05 -0.00616096" mesh="biltema_pushrod_screw" material="biltema_pushrod_screw_material"/>
+        <geom type="mesh" class="collision" pos="0.15 -0 -0.04405" quat="0.00246004 -0.999978 -1.51566e-05 -0.00616096" mesh="biltema_pushrod_screw" material="biltema_pushrod_screw_material"/>
         <!-- Part big_pulley_3 -->
-        <geom type="mesh" class="visual" pos="-0 0 -0.09" quat="0 0 -0.707107 -0.707107" mesh="big_pulley" material="big_pulley_material"/>
-        <geom type="mesh" class="collision" pos="-0 0 -0.09" quat="0 0 -0.707107 -0.707107" mesh="big_pulley" material="big_pulley_material"/>
+        <geom type="mesh" class="visual" pos="-0 -0 -0.09" quat="0 -0 -0.707107 -0.707107" mesh="big_pulley" material="big_pulley_material"/>
+        <geom type="mesh" class="collision" pos="-0 -0 -0.09" quat="0 -0 -0.707107 -0.707107" mesh="big_pulley" material="big_pulley_material"/>
         <!-- Part upper_arm_3 -->
-        <geom type="mesh" class="visual" pos="0.075 0 -0.06405" quat="0.5 0.5 -0.5 0.5" mesh="upper_arm" material="upper_arm_material"/>
-        <geom type="mesh" class="collision" pos="0.075 0 -0.06405" quat="0.5 0.5 -0.5 0.5" mesh="upper_arm" material="upper_arm_material"/>
+        <geom type="mesh" class="visual" pos="0.075 -0 -0.06405" quat="0.5 0.5 -0.5 0.5" mesh="upper_arm" material="upper_arm_material"/>
+        <geom type="mesh" class="collision" pos="0.075 -0 -0.06405" quat="0.5 0.5 -0.5 0.5" mesh="upper_arm" material="upper_arm_material"/>
         <!-- Part rod_3 -->
-        <geom type="mesh" class="visual" pos="-0.08 -0.0175 -0.071" quat="0.683013 0.683013 -0.183013 0.183013" mesh="rod" material="rod_material"/>
-        <geom type="mesh" class="collision" pos="-0.08 -0.0175 -0.071" quat="0.683013 0.683013 -0.183013 0.183013" mesh="rod" material="rod_material"/>
+        <geom type="mesh" class="visual" pos="-0.08 -0.0175 -0.0735" quat="0.683013 0.683013 -0.183013 0.183013" mesh="rod" material="rod_material"/>
+        <geom type="mesh" class="collision" pos="-0.08 -0.0175 -0.0735" quat="0.683013 0.683013 -0.183013 0.183013" mesh="rod" material="rod_material"/>
         <!-- Link push_rod_chassis_5 -->
-        <body name="push_rod_chassis_5" pos="0.15 0 -0.04405" quat="0.755438 -0.330427 -0.157992 0.543295">
+        <body name="push_rod_chassis_5" pos="0.15 -0 -0.04405" quat="0.760058 -0.350684 -0.135054 0.530183">
           <!-- Joint from rod_3 to push_rod_chassis_5 -->
           <joint axis="0 0 1" name="ball2_arm3" type="ball"/>
           <inertial pos="0 0 0" mass="1e-09" fullinertia="1e-09 1e-09 1e-09 0 0 0"/>
           <!-- Part forearm_5 -->
-          <geom type="mesh" class="visual" pos="0.2558 -0 -0" quat="0 -0.707107 0 0.707107" mesh="forearm" material="forearm_material"/>
-          <geom type="mesh" class="collision" pos="0.2558 -0 -0" quat="0 -0.707107 0 0.707107" mesh="forearm" material="forearm_material"/>
+          <geom type="mesh" class="visual" pos="0.2558 0 -0" quat="0 -0.707107 -0 0.707107" mesh="forearm" material="forearm_material"/>
+          <geom type="mesh" class="collision" pos="0.2558 0 -0" quat="0 -0.707107 -0 0.707107" mesh="forearm" material="forearm_material"/>
           <!-- Part push_rod_chassis_5 -->
-          <geom type="mesh" class="visual" pos="0.2658 -0 0.005" quat="0 -1 0 -0" mesh="push_rod_chassis" material="push_rod_chassis_material"/>
-          <geom type="mesh" class="collision" pos="0.2658 -0 0.005" quat="0 -1 0 -0" mesh="push_rod_chassis" material="push_rod_chassis_material"/>
+          <geom type="mesh" class="visual" pos="0.2648 0 0.005" quat="0 -1 0 -0" mesh="push_rod_chassis" material="push_rod_chassis_material"/>
+          <geom type="mesh" class="collision" pos="0.2648 0 0.005" quat="0 -1 0 -0" mesh="push_rod_chassis" material="push_rod_chassis_material"/>
           <!-- Part biltema_pushrod_chassis_5 -->
-          <geom type="mesh" class="visual" pos="-0 0 -0" quat="1 0 0 0" mesh="biltema_pushrod_chassis" material="biltema_pushrod_chassis_material"/>
-          <geom type="mesh" class="collision" pos="-0 0 -0" quat="1 0 0 0" mesh="biltema_pushrod_chassis" material="biltema_pushrod_chassis_material"/>
+          <geom type="mesh" class="visual" pos="0 0 0" quat="1 0 0 0" mesh="biltema_pushrod_chassis" material="biltema_pushrod_chassis_material"/>
+          <geom type="mesh" class="collision" pos="0 0 0" quat="1 0 0 0" mesh="biltema_pushrod_chassis" material="biltema_pushrod_chassis_material"/>
           <!-- Frame closing_ball2_forearm3B_plate_2 -->
-          <site group="3" name="closing_ball2_forearm3B_plate_2" pos="0.2658 -0 -0" quat="0.707107 0 -0 0.707107"/>
+          <site group="3" name="closing_ball2_forearm3B_plate_2" pos="0.2648 0 -0" quat="0.707107 0 -0 0.707107"/>
         </body>
         <!-- Link push_rod_chassis_6 -->
-        <body name="push_rod_chassis_6" pos="0.15 0 -0.08405" quat="0.813188 0.139391 0.152434 0.544114">
+        <body name="push_rod_chassis_6" pos="0.15 -0 -0.08405" quat="0.828315 0.125778 0.164942 0.520449">
           <!-- Joint from rod_3 to push_rod_chassis_6 -->
           <joint axis="0 0 1" name="ball1_arm3" type="ball"/>
           <inertial pos="0 0 0" mass="1e-09" fullinertia="1e-09 1e-09 1e-09 0 0 0"/>
@@ -340,45 +337,43 @@
           <geom type="mesh" class="visual" pos="0.2558 0 -0" quat="0.707107 -0 -0.707107 -0" mesh="forearm" material="forearm_material"/>
           <geom type="mesh" class="collision" pos="0.2558 0 -0" quat="0.707107 -0 -0.707107 -0" mesh="forearm" material="forearm_material"/>
           <!-- Part push_rod_chassis_6 -->
-          <geom type="mesh" class="visual" pos="0.2658 -0 -0.005" quat="1 0 0 -0" mesh="push_rod_chassis" material="push_rod_chassis_material"/>
-          <geom type="mesh" class="collision" pos="0.2658 -0 -0.005" quat="1 0 0 -0" mesh="push_rod_chassis" material="push_rod_chassis_material"/>
+          <geom type="mesh" class="visual" pos="0.2648 -0 -0.005" quat="1 0 0 -0" mesh="push_rod_chassis" material="push_rod_chassis_material"/>
+          <geom type="mesh" class="collision" pos="0.2648 -0 -0.005" quat="1 0 0 -0" mesh="push_rod_chassis" material="push_rod_chassis_material"/>
           <!-- Part biltema_pushrod_chassis_6 -->
-          <geom type="mesh" class="visual" pos="0 0 0" quat="1 0 0 -0" mesh="biltema_pushrod_chassis" material="biltema_pushrod_chassis_material"/>
-          <geom type="mesh" class="collision" pos="0 0 0" quat="1 0 0 -0" mesh="biltema_pushrod_chassis" material="biltema_pushrod_chassis_material"/>
+          <geom type="mesh" class="visual" pos="0 0 -0" quat="1 0 0 0" mesh="biltema_pushrod_chassis" material="biltema_pushrod_chassis_material"/>
+          <geom type="mesh" class="collision" pos="0 0 -0" quat="1 0 0 0" mesh="biltema_pushrod_chassis" material="biltema_pushrod_chassis_material"/>
           <!-- Frame closing_forearm3A_plate_2 -->
-          <site group="3" name="closing_forearm3A_plate_2" pos="0.2658 -0 -0" quat="0.707107 0 0 0.707107"/>
+          <site group="3" name="closing_forearm3A_plate_2" pos="0.2648 -0 -0" quat="0.707107 0 0 0.707107"/>
         </body>
       </body>
     </body>
   </worldbody>
   <asset>
-    <mesh file="motor_wire_connector.stl"/>
-    <mesh file="robot_mount.stl"/>
-    <mesh file="bts2_motor_wheel.stl"/>
-    <mesh file="motor.stl"/>
-    <mesh file="rod.stl"/>
-    <mesh file="forearm.stl"/>
-    <mesh file="biltema_pushrod_chassis.stl"/>
-    <mesh file="big_pulley.stl"/>
-    <mesh file="push_rod_ball.stl"/>
-    <mesh file="gripper_shoulder.stl"/>
-    <mesh file="small_pulley.stl"/>
-    <mesh file="motor_mount.stl"/>
-    <mesh file="upper_arm.stl"/>
-    <mesh file="ph_pan_head_screw_m5x0_80_x_20__cc5a28f66c81927f4b0c3b2d4528a18f.stl"/>
-    <mesh file="base_plate.stl"/>
-    <mesh file="mobile_gripper_side.stl"/>
-    <mesh file="end_effector_plate.stl"/>
     <mesh file="push_rod_chassis.stl"/>
-    <mesh file="biltema_pushrod_screw.stl"/>
+    <mesh file="gripper_shoulder.stl"/>
     <mesh file="bts2_motor.stl"/>
-    <mesh file="rod_mount.stl"/>
+    <mesh file="biltema_pushrod_screw.stl"/>
+    <mesh file="forearm.stl"/>
+    <mesh file="motor_wire_connector.stl"/>
+    <mesh file="rod.stl"/>
+    <mesh file="bts2_motor_wheel.stl"/>
+    <mesh file="big_pulley.stl"/>
+    <mesh file="motor_mount.stl"/>
+    <mesh file="end_effector_plate.stl"/>
+    <mesh file="ph_pan_head_screw_m5x0_80_x_20__cc5a28f66c81927f4b0c3b2d4528a18f.stl"/>
+    <mesh file="biltema_pushrod_chassis.stl"/>
+    <mesh file="upper_arm.stl"/>
+    <mesh file="small_pulley.stl"/>
+    <mesh file="mobile_gripper_side.stl"/>
+    <mesh file="push_rod_ball.stl"/>
+    <mesh file="motor.stl"/>
     <mesh file="static_gripper_side.stl"/>
+    <mesh file="base_plate.stl"/>
+    <mesh file="rod_mount.stl"/>
     <material name="rod_mount_material" rgba="0.231373 0.380392 0.705882 1"/>
     <material name="small_pulley_material" rgba="0.866667 0.909804 1 1"/>
     <material name="motor_mount_material" rgba="0.647059 0.647059 0.647059 1"/>
     <material name="motor_wire_connector_material" rgba="0.796078 0.823529 0.937255 1"/>
-    <material name="robot_mount_material" rgba="0.768627 0.886275 0.952941 1"/>
     <material name="base_plate_material" rgba="0.615686 0.811765 0.929412 1"/>
     <material name="motor_material" rgba="0.796078 0.823529 0.937255 1"/>
     <material name="biltema_pushrod_screw_material" rgba="0.627451 0.627451 0.627451 1"/>
@@ -398,12 +393,12 @@
     <material name="mobile_gripper_side_material" rgba="0.627451 0.627451 0.627451 1"/>
   </asset>
   <actuator>
-    <position class="delta-robot" name="shoulder_1" joint="shoulder_1"/>
+    <position class="delta-robot" name="shoulder_1" joint="shoulder_1" inheritrange="1"/>
     <position class="delta-robot" name="flexion_extension" joint="flexion_extension" inheritrange="1"/>
     <position class="delta-robot" name="pronation_supination" joint="pronation_supination" inheritrange="1"/>
     <position class="delta-robot" name="gripper" joint="gripper" inheritrange="1"/>
-    <position class="delta-robot" name="shoulder_2" joint="shoulder_2"/>
-    <position class="delta-robot" name="shoulder_3" joint="shoulder_3"/>
+    <position class="delta-robot" name="shoulder_2" joint="shoulder_2" inheritrange="1"/>
+    <position class="delta-robot" name="shoulder_3" joint="shoulder_3" inheritrange="1"/>
   </actuator>
   <equality>
     <connect site1="closing_ball4_arm1_1" site2="closing_ball4_arm1_2" solref="0.005 1" solimp="0.99 0.999 0.001 0.5 2"/>
