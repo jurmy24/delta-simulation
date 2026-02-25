@@ -1,8 +1,10 @@
 # Delta Robot Simulation
 
-MuJoCo simulation of the FR8 delta robot. The MJCF model (`simulation/delta-robot/robot.xml`) was auto-generated from the Onshape CAD assembly using [onshape-to-robot](https://github.com/Rhoban/onshape-to-robot).
+MuJoCo simulation of a self-built delta robot. The MJCF model (`simulation/delta-robot/robot.xml`) was auto-generated from the Onshape CAD assembly using [onshape-to-robot](https://github.com/Rhoban/onshape-to-robot). Note that the mates need to follow certain naming conventions for this to work, check their docs. 
 
 [Onshape source](https://cad.onshape.com/documents/20bfbde5f0dfed09746f3835/w/89e87a07589996b404d06798/e/02e6df3ca634eef0ea4fbf46)
+
+Also, for fun I added the [Koch arm](https://github.com/AlexanderKoch-Koch/low_cost_robot) to the end effector.
 
 ## Setup
 
@@ -32,7 +34,7 @@ All MuJoCo simulation settings are configured in `simulation/delta-robot/config.
 
 ## Limitations
 
-- **IK parameter mismatch**: The inverse kinematics parameters (`Fd`, `Ed`, `lower_arm`) were measured from the physical robot and may not perfectly match the simulation geometry. The square trajectory script uses the same parameters as `delta/python/delta_kinematics.py` — if the end effector path looks wrong, these need calibration against the simulation model.
-- **No self-collision**: Inter-body collision is disabled for the robot. The robot can still collide with external objects (floor, etc.) but will pass through itself.
+- **IK parameter mismatch**: The inverse kinematics parameters (`Fd`, `Ed`, `lower_arm`) were measured from the physical robot and don't perfectly match the simulation geometry. I've just been a little bit lazy. Might update the values to be exact.
+- **No self-collision**: Inter-body collision is disabled for the robot. The robot can still collide with external objects (floor, etc.) but will pass through itself (so it will not have the same workspace constraints as a physical version).
 - **Soft loop closure**: The closed kinematic chains use MuJoCo equality connect constraints, which are soft (spring-damper). Under large loads or fast motions, small constraint violations (~0.01mm) are normal.
 - **Gripper not tuned**: The gripper joints (`flexion_extension`, `pronation_supination`, `gripper`) have actuators but the kinematics/control for them is not implemented in the trajectory scripts.
