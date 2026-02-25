@@ -2,8 +2,7 @@
 """
 Drive the simulated delta robot's end effector through a square trajectory.
 
-Uses the same inverse kinematics as delta/python/delta_kinematics.py
-(two-triangle method) to convert Cartesian waypoints into shoulder joint
+Uses the two-triangle method to convert Cartesian waypoints into shoulder joint
 angles, then plays them back in the MuJoCo viewer.
 
 Usage:
@@ -22,7 +21,7 @@ import mujoco
 import mujoco.viewer
 
 
-# ── Inverse kinematics (copied from delta/python/delta_kinematics.py) ────────
+# ── Inverse kinematics────────
 
 
 @dataclass
